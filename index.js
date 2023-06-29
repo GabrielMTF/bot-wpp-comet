@@ -17,7 +17,7 @@ client.on('message', message => {
     const options = ['1', '2', '3', '4']
     const content = message.body.toLowerCase()
 
-    if (content !== '' && !options.includes(content)) {
+    if (content === 'oi') {
         message.reply(
             'Olá! Bem-vindo ao atendimento da Comet Company. Por favor, digite o número correspondente à sua necessidade: 1. Informações sobre produtos 2. Rastreamento de pedidos 3. Falar com um atendente 4. Redes Sociais.'
         )
